@@ -11,13 +11,14 @@ if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'dev') {
 // ────────────────────────────────────────────────────────────────────────────────
 
 module.exports = {
-  entry: [
-    './src/index'
-  ],
+  entry: {
+    main: ['./src/index'],
+    grid: ['./src/grid/index'],
+  },
   output: {
     path: path.resolve(`${__dirname}/../lib`),
     publicPath: '/',
-    filename: '[name].bundle.js',
+    filename: '[name].min.js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],

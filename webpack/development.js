@@ -16,7 +16,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(`${__dirname}/../lib`),
-    filename: '[name].bin.js',
+    filename: '[name].min.js',
     sourceMapFilename: '[name].map',
     chunkFilename: '[id].chunk.js',
     library: 'ac_[name]',

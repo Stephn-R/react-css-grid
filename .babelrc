@@ -5,9 +5,7 @@
   ],
   "plugins": [
     "react-hot-loader/babel",
-    "transform-object-rest-spread",
-    "syntax-async-functions",
-    "transform-regenerator"
+    "transform-object-rest-spread"
   ],
   "env": {
     "development": {
