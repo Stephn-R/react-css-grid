@@ -1,0 +1,76 @@
+{
+  "name": "react-css-grid",
+  "version": "0.0.1",
+  "description": "a collection of components to help build using CSS Grid",
+  "main": "lib/main.bundle.js",
+  "scripts": {
+    "check": "nsp check",
+    "copy": "copyfiles index.html lib",
+    "prebuild": "npm run clean && npm run copy",
+    "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.js",
+    "predev": "npm run prebuild",
+    "dev": "webpack-dev-server",
+    "clean": "rimraf lib",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stephn-R/react-css-grid.git"
+  },
+  "files": [
+    "lib",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "react",
+    "css",
+    "grid",
+    "css-grid",
+    "components"
+  ],
+  "author": {
+    "email": "steprodriguez10@gmail.com",
+    "name": "Stephen Rodriguez"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stephn-R/react-css-grid/issues"
+  },
+  "homepage": "https://github.com/Stephn-R/react-css-grid#readme",
+  "peerDependencies": {
+    "react": ">=0.14.0",
+    "react-dom": ">=0.14.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.2",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.3.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "copyfiles": "^1.2.0",
+    "cross-env": "^4.0.0",
+    "dotenv": "^4.0.0",
+    "enzyme": "^2.8.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "nsp": "^2.6.3",
+    "react-hot-loader": "3.0.0-beta.6",
+    "rimraf": "^2.6.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-hot-middleware": "^2.18.0",
+    "webpack-merge": "^4.1.0",
+    "webpack-notifier": "^1.5.0"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
