@@ -9,10 +9,9 @@ const common = require('./common');
 // ────────────────────────────────────────────────────────────────────────────────
 
 module.exports = merge(common, {
-  devtool: 'cheap-module-source-map',
   output: {
     path: path.resolve(`${__dirname}/../lib`),
-    filename: '[name].bundle.js',
+    filename: '[name].min.js',
     sourceMapFilename: '[name].map',
     chunkFilename: '[id].chunk.js',
     library: 'ac_[name]',

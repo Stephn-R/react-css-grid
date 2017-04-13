@@ -1,19 +1,7 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "browsers": [
-          "not ie < 11",
-          "Firefox >= 52",
-          "Chrome >= 57",
-          "Safari >= 10.1",
-          "Opera >= 44",
-          "iOS >= 10.3"
-        ]
-      },
-      "module": false
-    }],
-    "react"
+    "react",
+    ["es2015", {"modules": false}]
   ],
   "plugins": [
     "react-hot-loader/babel",

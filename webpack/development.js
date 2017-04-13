@@ -9,14 +9,14 @@ const WebpackNotifierPlugin = require('webpack-notifier');
 
 // ────────────────────────────────────────────────────────────────────────────────
 
-common.entry.unshift('webpack/hot/only-dev-server');
-common.entry.unshift('react-hot-loader/patch');
+common.entry.main.unshift('webpack/hot/only-dev-server');
+common.entry.main.unshift('react-hot-loader/patch');
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(`${__dirname}/../lib`),
-    filename: '[name].bundle.js',
+    filename: '[name].bin.js',
     sourceMapFilename: '[name].map',
     chunkFilename: '[id].chunk.js',
     library: 'ac_[name]',

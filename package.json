@@ -18,7 +18,7 @@
     "url": "git+https://github.com/Stephn-R/react-css-grid.git"
   },
   "files": [
-    "lib",
+    "lib/grid.min.js",
     "CHANGELOG.md"
   ],
   "keywords": [
@@ -47,7 +47,6 @@
     "babel-eslint": "^7.2.2",
     "babel-loader": "^6.4.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-env": "^1.3.3",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "copyfiles": "^1.2.0",
