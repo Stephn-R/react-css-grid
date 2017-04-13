@@ -1,3 +1,6 @@
+// ────────────────────────────────────────────────────────────────────────────────
+// MODULES
+
 import { AppContainer } from 'react-hot-loader';
 
 import React from 'react';
@@ -5,17 +8,14 @@ import ReactDOM from 'react-dom';
 
 import App from './app';
 
-const props = {
-  title: 'Hello World!!!',
-};
+// ────────────────────────────────────────────────────────────────────────────────
 
-const rootEl = document.getElementById('root');
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
-      <Component {...props} />
+      <Component />
     </AppContainer>,
-    rootEl,
+    document.getElementById('root'),
   );
 };
 
