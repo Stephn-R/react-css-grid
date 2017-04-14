@@ -1,6 +1,6 @@
 {
   "name": "react-grid-css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a collection of components to help build using CSS Grid",
   "main": "lib/main.bundle.js",
   "scripts": {
